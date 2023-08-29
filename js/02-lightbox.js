@@ -14,22 +14,12 @@ const markup = galleryItems.map(({preview, original, description}) =>
 </li>`);
 
 gallery.insertAdjacentHTML('beforeend', markup.join(''));
-gallery.addEventListener('click', onClick);
 
-function onClick(evt) {
-    evt.preventDefault();
-    const { target } = evt
-    if(!target.classList.contains("gallery__image")) {
-        return;
-    }
-
-
-    const lightbox = new SimpleLightbox('.gallery__link', {
+const lightbox = new SimpleLightbox('.gallery__link', {
         captionsData: 'alt',
         captionDelay: 250,
     });
 
-}
 
 
 
