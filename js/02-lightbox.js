@@ -24,21 +24,12 @@ function onClick(evt) {
     }
 
 
-    const lightbox = new SimpleLightbox('.gallery__link', {});
+    const lightbox = new SimpleLightbox('.gallery__link', {
+        captionsData: 'alt',
+        captionDelay: 250,
+    });
 
-
-    // const gallerySource = target.dataset.source;
-    // const galleryAttributeAlt = target.getAttribute("alt");
-
-    // console.log(gallerySource);
-    // console.log(galleryAttributeAlt);
-    // console.log(lightbox);
 }
-
-
-
-
-// console.log(galleryItems);
 
 
 
